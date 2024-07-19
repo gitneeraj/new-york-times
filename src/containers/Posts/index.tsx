@@ -13,9 +13,9 @@ export default function Posts() {
         Posts
       </Typography>
 
-      <Grid container gap={3}>
+      <Grid container spacing={3}>
         {posts?.results?.map((post) => (
-          <Grid item key={post.id}>
+          <Grid item key={post.id} xs={12} sm={6} md={4}>
             <Link to={`post/${post.id}`}>
               <AppCard data={post} />
             </Link>

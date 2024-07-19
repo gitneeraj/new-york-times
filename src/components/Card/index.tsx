@@ -11,7 +11,7 @@ export type AppCardProps = { data: Result }
 
 export default function AppCard({ data }: Readonly<AppCardProps>) {
   return (
-    <Card sx={{ maxWidth: 345, minHeight: '350px' }}>
+    <Card sx={{ maxWidth: 'auto', minHeight: '350px' }}>
       <CardActionArea sx={{ height: '100%' }}>
         <CardMedia
           component='img'
